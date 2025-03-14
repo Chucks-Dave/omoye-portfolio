@@ -66,7 +66,10 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className=" flex items-center justify-center py-20">
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center py-20"
+    >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
@@ -130,8 +133,8 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="h-full">
-              <div className="p-6 rounded-xl  w-full h-full  border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="max-h-full  w-full">
+              <div className="p-6 rounded-xl  w-full max-h-full  border-white/10 border hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
                 <div className="space-y-2 text-gray-300">
                   {experiences.map((experience, key) => (
