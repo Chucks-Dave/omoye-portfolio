@@ -1,7 +1,7 @@
 {
   "name": "beautiful-portfolio",
-  "homepage": "https://machadop1407.github.io/pedrotech-portfolio",
-  "private": true,
+  "homepage": "https://omobelle.netlify.app/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
