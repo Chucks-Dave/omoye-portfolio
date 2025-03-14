@@ -137,7 +137,7 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
               <div className="space-y-2 text-gray-300">
                 {experiences.map((experience, key) => (
-                  <div key={key} className="space-y-3">
+                  <div key={key} className="space-y-2">
                     <h4 className="font-semibold">{experience.title}</h4>
                     <p>{experience.company_name}</p>
                     <p>{experience.date}</p>
