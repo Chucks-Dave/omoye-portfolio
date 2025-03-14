@@ -119,7 +119,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <div className="grid grid-cols-1  md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
@@ -133,15 +133,16 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="p-6 rounded-xl  w-full  border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-              <div className="space-y-4 text-gray-300">
+              <div className="space-y-2 text-gray-300">
                 {experiences.map((experience, key) => (
                   <div key={key} className="space-y-3">
-                    <h4 className="f">{experience.title}</h4>
+                    <h4 className="font-semibold">{experience.title}</h4>
                     <p>{experience.company_name}</p>
                     <p>{experience.date}</p>
 
+                    {/* Render each point as a bullet in a list */}
                     <ul className="list-disc list-inside space-y-1">
                       {experience.points.map((point, idx) => (
                         <li key={idx}>{point}</li>
