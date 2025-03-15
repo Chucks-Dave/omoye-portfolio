@@ -134,9 +134,24 @@ export const About = () => {
               </ul>
             </div>
             <div className="">
-              <div className="p-6 rounded-xl  w-full  border-white/10 border hover:-translate-y-1 transition-all">
+              <div className="p-6 rounded-xl w-full border-white/10 border hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-                <div className="space-y-2 text-gray-300"></div>
+
+                <div className="space-y-2 text-gray-300">
+                  {experiences.map((experience, key) => (
+                    <div key={key} className="space-y-2">
+                      <h4 className="font-semibold">{experience.title}</h4>
+                      <p>{experience.company_name}</p>
+                      <p>{experience.date}</p>
+
+                      <ul className="list-disc list-inside space-y-1">
+                        {experience.points.map((point, idx) => (
+                          <li key={idx}>{point}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
